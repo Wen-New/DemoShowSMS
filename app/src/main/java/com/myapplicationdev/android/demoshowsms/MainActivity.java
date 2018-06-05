@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.PermissionChecker;
 import android.support.v7.app.AppCompatActivity;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Create all messages URI
-                android.net.Uri uri = android.net.Uri.parse("content://sms");
+                Uri uri = android.net.Uri.parse("content://sms");
 
                 // The columns we want
                 //  date is when the message took place
